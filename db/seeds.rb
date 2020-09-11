@@ -11,9 +11,9 @@ require 'faker'
 User.destroy_all
 Note.destroy_all
 
-sam = User.create(email: "tester@gmail.com", name: "Yeet", password: "password")
-Note.create(user: sam, title: "Create login", contents: "Work on making the login next")
-Note.create(user: sam, title: "Create dashboard", contents: "Work on making the dashboard next")
+yeet = User.create(email: "tester@gmail.com", name: "Yeet", password: "password")
+Note.create(user: yeeter, title: "Something cool here", contents: "get it together mam")
+
 
 10.times do
     user = User.create(email: Faker::Internet.email, name: Faker::Name.name, password: 'password')
